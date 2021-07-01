@@ -5,10 +5,6 @@ public class helloMain {
 	
 	
 	
-	public static int count =0;
-	public static String GoodsName = null;
-	public static int GoodsPrice =0;
-	
 	
 	
 	
@@ -21,7 +17,7 @@ public class helloMain {
 			dbQuery.dbQuery();
 			
 		}while(dbQuery.choiceAdd==1); 
-		
+		dbQuery.total();
 		print.printTotalPrice(dbQuery.totalPrice);
 		print.inputPrice();
 		print.justPrint();
@@ -30,6 +26,7 @@ public class helloMain {
 		
 		
 		print.finalPrice(dbQuery.totalPrice);
+		dbQuery.accoutBook();
 		
 	}
 
